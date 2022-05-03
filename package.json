@@ -1,0 +1,32 @@
+{
+  "name": "nezuko",
+  "version": "1.0.0",
+  "description": "pepega",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "pretty": "prettier --trailing-comma none --write .",
+    "node-update": "npm i --save-dev node@16 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH",
+    "node-clean": "rm -rf node_modules && rm package-lock.json && npm cache clear --force && npm cache clean --force && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsMohit11/nezuko.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItsMohit11/nezuko/issues"
+  },
+  "homepage": "https://github.com/ItsMohit11/nezuko#readme",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "express": "^4.18.1",
+    "prettier": "^2.6.2",
+    "quick.db": "^7.1.3"
+  },
+  "devDependencies": {
+    "node": "^16.14.2"
+  }
+}
